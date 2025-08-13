@@ -1,0 +1,37 @@
+.about-section {
+  position: relative;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 200px;
+  background: url('https://static.vecteezy.com/system/resources/previews/013/087/516/non_2x/diagonal-golden-line-glass-cube-on-black-background-illustration-of-website-banner-poster-sign-corporate-business-social-media-post-billboard-agency-advertising-media-motion-video-animation-wave-vector.jpg') repeat-x;
+  animation: wave 10s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 5px solid white;
+}
