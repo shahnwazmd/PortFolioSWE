@@ -1,7 +1,6 @@
 import { Component} from '@angular/core';
  import { NgForm  } from "@angular/forms";
-import { OrderRepository } from '../model/order.repository';
-import { Order } from '../model/order.model';
+
 import {NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 

@@ -1,7 +1,5 @@
 import { Component } from "@angular/core";
-import { Product } from "../model/product.model";
-import { ProductRepository } from "../model/product.repository";
-import { Cart } from "../model/cart.model";
+
 import { Router } from "@angular/router";
 
 @Component({
@@ -15,8 +13,7 @@ export class StoreComponent {
   public selectedPage = 1;
 
   constructor(
-    private repository: ProductRepository,
-    private cart: Cart,
+
     private router: Router
   ) {}
  colors = [
@@ -51,9 +48,7 @@ export class StoreComponent {
   }
 
 
-  get categories(): string[] {
-    return this.repository.getCategories();
-  }
+
 
   changeCategory(newCategory?: string) {
     this.selectedCategory = newCategory;
@@ -68,19 +63,19 @@ export class StoreComponent {
     this.changePage(1);
   }
 
-  get pageNumbers(): number[] {
-    return Array(
-      Math.ceil(
-        this.repository.getProducts(this.selectedCategory).length /
-          this.productsPerPage
-      )
-    )
-      .fill(0)
-      .map((x, i) => i + 1);
-  }
+  // get pageNumbers(): number[] {
+  //   return Array(
+  //     Math.ceil(
+  //       this.repository.getProducts(this.selectedCategory).length /
+  //         this.productsPerPage
+  //     )
+  //   )
+  //     .fill(0)
+  //     .map((x, i) => i + 1);
+  // }
 
-  addProductToCart(product: Product) {
-    this.cart.addLine(product);
-    this.router.navigateByUrl("/cart");
-  }
+  // addProductToCart(product: Product) {
+  //   this.cart.addLine(product);
+  //   this.router.navigateByUrl("/cart");
+  // }
 }

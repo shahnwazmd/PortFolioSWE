@@ -1,4 +1,4 @@
-import { Cart } from './../model/cart.model';
+
 import { Component, OnInit } from '@angular/core';
 
 
@@ -8,5 +8,5 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class skillComponent {
-   constructor(public cart: Cart) { }
+
 }

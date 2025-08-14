@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { Cart } from "../model/cart.model";
 
 @Component({
    selector: "about-component",
@@ -8,5 +7,5 @@ import { Cart } from "../model/cart.model";
 
 })
 export class AboutComponent {
-  constructor(public cart: Cart) {}
+  
 }

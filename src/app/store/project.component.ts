@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Cart } from "../model/cart.model";
+
 
 @Component({
     selector: "project-component",
@@ -8,7 +8,7 @@ import { Cart } from "../model/cart.model";
 })
 export class ProjectComponent {
 
-    constructor(public cart: Cart) { }
+
 
     projects = [
   {
