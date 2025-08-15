@@ -19,7 +19,7 @@ Built with a focus on recruiters and hiring managers, featuring smooth navigatio
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Angular 19
+- **Framework**: Angular 18
 - **Styling**: Tailwind CSS / Bootstrap  / Custom CSS
 - **Language**: TypeScript
 - **Animations**: Angular Animations / AOS / Custom CSS animations *(update if applicable)*
